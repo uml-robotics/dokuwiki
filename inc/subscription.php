@@ -492,13 +492,20 @@ class Subscription {
             'NEWEMAIL' => $email,
         );
 
-        return $this->send(
-            $conf['registernotify'],
-            'new_user',
-            $login,
-            'registermail',
-            $trep
-        );
+        $success= True;
+
+        // Allow multiple e-mails to be notified on new user registration.
+        $emails = explode(', ', $conf['registernotify']);
+        foreach($emails as $email){
+            $success = $success and $this->send(
+                $email,
+                'new_user',
+                $login,
+                'registermail',
+                $trep
+            );
+        }
+        return $success;
     }
 
     /**
