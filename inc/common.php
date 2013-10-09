@@ -97,6 +97,10 @@ function pageinfo() {
     global $RANGE;
     global $USERINFO;
     global $lang;
+    global $conf;
+
+    // determines if the page is viewed from lan
+    $info['islan'] = (stripos(clientIp(true), $conf['lanmask']) !== false);
 
     // include ID & REV not redundant, as some parts of DokuWiki may temporarily change $ID, e.g. p_wiki_xhtml
     // FIXME ... perhaps it would be better to ensure the temporary changes weren't necessary

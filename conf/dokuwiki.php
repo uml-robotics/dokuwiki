@@ -27,6 +27,7 @@ $conf['cookiedir']   = '';                //path to use in cookies - blank for b
 $conf['dmode']       = 0755;              //set directory creation mode
 $conf['fmode']       = 0644;              //set file creation mode
 $conf['allowdebug']  = 0;                 //allow debug output, enable if needed 0|1
+$conf['lanmask']     = '10.0.';           //ip mask to identify when a page is viewed from local network
 
 /* Display Settings */
 $conf['recent']      = 20;                //how many entries to show in recent
