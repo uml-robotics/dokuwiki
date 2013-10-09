@@ -69,8 +69,8 @@ $lang['nosecedit']             = 'The page was changed in the meantime, section 
 
 $lang['regmissing']            = 'Sorry, you must fill in all fields.';
 $lang['reguexists']            = 'Sorry, a user with this login already exists.';
-$lang['regsuccess']            = 'The user has been created and the password was sent by email.';
-$lang['regsuccess2']           = 'The user has been created.';
+$lang['regsuccess']            = 'The user has been created and the password was sent by email. Admin would need to approve the account.';
+$lang['regsuccess2']           = 'The user has been created. Admin would need to approve the account.';
 $lang['regmailfail']           = 'Looks like there was an error on sending the password mail. Please contact the admin!';
 $lang['regbadmail']            = 'The given email address looks invalid - if you think this is an error, contact the admin';
 $lang['regbadpass']            = 'The two given passwords are not identical, please try again.';
@@ -206,7 +206,7 @@ $lang['sidebar']               = 'Sidebar';
 $lang['mail_newpage']          = 'page added:';
 $lang['mail_changed']          = 'page changed:';
 $lang['mail_subscribe_list']   = 'pages changed in namespace:';
-$lang['mail_new_user']         = 'new user:';
+$lang['mail_new_user']         = '[ACTION REQUIRED] new user:';
 $lang['mail_upload']           = 'file uploaded:';
 
 $lang['changes_type']          = 'View changes of';

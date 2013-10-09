@@ -1,4 +1,14 @@
-A new user has registered. Here are the details:
+A new user has registered.
+The user currently has limited access, if any.
+Please add the user to the appropriate group by going to @DOKUWIKIURL@ admin/usermanager.
+Also, remove the user from default @user.
+
+Guidelines:
+  * @lab-member group gives the widest permissions with exceptions, people working in the lab should generally be added to this group
+  * No one should ever be added to @admin except for one dedicated user.
+  * If your case can not be covered by existing groups, create a new one (e.g. for people from another university), but ONLY if it can not be covered by existing groups. We do not want to have 100 groups.
+
+The details:
 
 User name   : @NEWUSER@
 Full name   : @NEWNAME@

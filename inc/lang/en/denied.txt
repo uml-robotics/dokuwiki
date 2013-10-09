@@ -2,3 +2,4 @@
 
 Sorry, you don't have enough rights to continue. Perhaps you forgot to login?
 
+Or admin did not approve your account yet?
