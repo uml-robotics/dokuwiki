@@ -397,7 +397,7 @@ function tpl_metaheaders($alt = true) {
 
     // make $INFO and other vars available to JavaScripts
     $json   = new JSON();
-    $script = "var NS='".$INFO['namespace']."';";
+    $script = "var NS='".$INFO['namespace']."'; var NS_FULL='".$INFO['id']."';";
     if($conf['useacl'] && $_SERVER['REMOTE_USER']) {
         $script .= "var SIG='".toolbar_signature()."';";
     }
