@@ -802,6 +802,8 @@ function tpl_breadcrumbs($sep = '•') {
         $crumbs_sep = ' <span class="bcsep">'.$sep.'</span> ';
     }
 
+    tpl_up();
+
     //render crumbs, highlight the last one
     print '<span class="bchead">'.$lang['breadcrumb'].':</span>';
     $last = count($crumbs);
@@ -816,6 +818,17 @@ function tpl_breadcrumbs($sep = '•') {
     return true;
 }
 
+/**
+ *  Renders link to upper namespace.
+ *
+ */
+function tpl_up() {
+    global $ID;
+    $parent_id = tpl_getparent($ID);
+    $rep_id = wl($parent_id);
+    tpl_link($rep_id,'Go up ');
+    echo('| ');
+}
 /**
  * Hierarchical breadcrumbs
  *
@@ -840,6 +853,8 @@ function tpl_youarehere($sep = ' » ') {
 
     $parts = explode(':', $ID);
     $count = count($parts);
+
+    tpl_up();
 
     echo '<span class="bchead">'.$lang['youarehere'].': </span>';
 
