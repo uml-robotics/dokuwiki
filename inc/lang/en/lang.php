@@ -27,7 +27,7 @@ $lang['btn_top']               = 'Back to top';
 $lang['btn_newer']             = '<< more recent';
 $lang['btn_older']             = 'less recent >>';
 $lang['btn_revs']              = 'Old revisions';
-$lang['btn_recent']            = 'Recent changes';
+$lang['btn_recent']            = 'Recent';
 $lang['btn_upload']            = 'Upload';
 $lang['btn_cancel']            = 'Cancel';
 $lang['btn_index']             = 'Sitemap';
@@ -50,7 +50,7 @@ $lang['btn_draftdel']          = 'Delete draft';
 $lang['btn_revert']            = 'Restore';
 $lang['btn_register']          = 'Register';
 $lang['btn_apply']             = 'Apply';
-$lang['btn_media']             = 'Media Manager';
+$lang['btn_media']             = 'Media';
 
 $lang['loggedinas']            = 'Logged in as';
 $lang['user']                  = 'Username';
