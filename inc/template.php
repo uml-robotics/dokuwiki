@@ -649,6 +649,11 @@ function tpl_get_action($type) {
             $params    = array();
             $id        = '#dokuwiki__top';
             break;
+        case 'attach':
+            $type='media';
+            $params['do'] = 'media';
+            $params['ns'] = $ID;
+            break;
         case 'back':
             $parent = tpl_getparent($ID);
             if(!$parent) {
