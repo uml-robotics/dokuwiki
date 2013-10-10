@@ -52,7 +52,7 @@ $lang['btn_register']          = 'Register';
 $lang['btn_apply']             = 'Apply';
 $lang['btn_media']             = 'Media';
 
-$lang['loggedinas']            = 'Logged in as';
+$lang['loggedinas']            = '<i class="icon-user"></i>';
 $lang['user']                  = 'Username';
 $lang['pass']                  = 'Password';
 $lang['newpass']               = 'New password';
