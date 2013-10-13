@@ -831,8 +831,7 @@ function tpl_up() {
     global $ID;
     $parent_id = tpl_getparent($ID);
     $rep_id = wl($parent_id);
-    tpl_link($rep_id,'Go up ');
-    echo('| ');
+    tpl_link($rep_id,'<i class="icon-double-angle-up"></i> Go up ');
 }
 /**
  * Hierarchical breadcrumbs
